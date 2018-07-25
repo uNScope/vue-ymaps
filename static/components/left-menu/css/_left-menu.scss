@@ -1,0 +1,35 @@
+.c-left-menu {
+  list-style-type: none;
+
+  &, & ul {
+    padding: 0;
+    margin: 0;
+  }
+  &__section {
+    margin-bottom: 20px;
+    a {
+      text-decoration: none;
+      color: #FF3333;
+    }
+    & > a, & > span {
+      padding: 10px;
+      background: #fff;
+      border-radius: 5px;
+      text-align: center;
+      display: block;
+      margin-bottom: 20px;
+    }
+    li a {
+      color: #333333;
+      display: block;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__item {
+    padding: 10px;
+    border: solid 1px #cccccc;
+    margin-top: -1px;
+  }
+}

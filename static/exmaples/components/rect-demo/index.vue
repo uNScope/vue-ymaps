@@ -1,19 +1,21 @@
 <template>
-  <div>
-    <ym-map :center="[20, 20]" :zoom="6" :width="200" :height="200">
-      <ym-rectangle :coordinates="[[19.7, 19.7], [20,20]]" />
+  <with-menu>
+    <ym-map :center="[20, 20]" :zoom="6" :width="'100%'" :height="200">
+      <ym-rectangle :coordinates="[[19.2, 19.2], [20,20]]" />
     </ym-map>
-  </div>
+  </with-menu>
 </template>
 
 <script>
   import { YmMap, YmRectangle } from 'src/objects'
+  import WithMenu from '../with-menu'
 
   export default {
     name: 'RectDemo',
     components: {
       YmMap,
-      YmRectangle
+      YmRectangle,
+      WithMenu
     }
   }
 </script>

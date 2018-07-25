@@ -1,4 +1,4 @@
-import { examplesMenu } from "./exmaples"
+import { examplesMenu } from "./exmaples/routes"
 
 export default [
   ...examplesMenu

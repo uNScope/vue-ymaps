@@ -1,7 +1,7 @@
 <template>
-  <ul class="c-demo-menu">
-    <li v-for="(item, key) in menu"
-        class="c-demo-menu__section"
+  <ul class="c-left-menu">
+    <li v-for="(item, key) in links"
+        class="c-left-menu__section"
         :key="key">
 
       <template v-if="item.path">
@@ -25,13 +25,16 @@
 </template>
 
 <style lang="scss">
-  @import 'css/demo-menu';
+  @import 'css/left-menu';
 </style>
 
 <script>
-  import menu from 'static/menu'
-
   export default {
-    data: () => ({ menu })
+    props: {
+      links: {
+        type: Array,
+        required: true
+      }
+    }
   }
 </script>
