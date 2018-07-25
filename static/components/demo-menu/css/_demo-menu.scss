@@ -1,0 +1,8 @@
+.c-demo-menu {
+  list-style-type: none;
+  &__item {
+    padding: 10px;
+    border: solid 1px #cccccc;
+    margin-top: -1px;
+  }
+}
